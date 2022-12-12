@@ -55,12 +55,16 @@ $qr_size = ($settings->alt_barcode_enabled=='1') && ($settings->alt_barcode!='')
         margin-top:-7px;
         width: 100%;
     }
-    div.label-logo {
+    div.label-logo, div.label-logo-company {
         float: right;
         display: inline-block;
     }
     img.label-logo {
         height: 0.5in;
+    }
+    img.label-logo-company{
+	max-height: 25px;
+	padding-right: 5px;
     }
     .qr_text {
         width: {{ $settings->labels_width }}in;
@@ -119,9 +123,15 @@ $qr_size = ($settings->alt_barcode_enabled=='1') && ($settings->alt_barcode!='')
         <div class="qr_text">
             @if ($settings->label_logo)
                 <div class="label-logo">
-                    <img class="label-logo" src="{{ Storage::disk('public')->url('').e($snipeSettings->label_logo) }}">
+                    <!--<img class="label-logo" src="{{ Storage::disk('public')->url('').e($snipeSettings->label_logo) }}">-->
+			<img class="label-logo" src="{{ config('app.url') }}/uploads/companies/{{ $asset->company->image }}">
                 </div>
             @endif
+	    @if (($settings->labels_display_company_name=='1') && ($asset->company->image))
+		<div class="label-logo-company">
+                    <img class="label-logo-company" src="{{ config('app.url') }}/uploads/companies/{{ $asset->company->image }}">
+                </div>
+	    @endif
             @if ($settings->qr_text!='')
                 <div class="pull-left">
                     <strong>{{ $settings->qr_text }}</strong>

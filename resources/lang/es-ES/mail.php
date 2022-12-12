@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'acceptance_asset_accepted' => 'A user has accepted an item',
-    'acceptance_asset_declined' => 'A user has declined an item',
+    'acceptance_asset_accepted' => 'Un usuario ha aceptado un activo',
+    'acceptance_asset_declined' => 'Un usuario ha rechazado un activo',
     'a_user_canceled' => 'El usuario ha cancelado el item solicitado en la pagina Web',
     'a_user_requested' => 'Un usuario a solicitado un item en la pagina Web',
     'accessory_name' => 'Nombre de accesorio:',
@@ -45,7 +45,7 @@ return [
     'Low_Inventory_Report' => 'Reporte de inventario bajo',
     'min_QTY' => 'Cantidad mínima',
     'name' => 'Nombre',
-    'new_item_checked' => 'Un nuevo artículo se ha extraído bajo su nombre, los detalles están a continuación.',
+    'new_item_checked' => 'Un nuevo activo se ha extraído bajo su nombre, los detalles están a continuación.',
     'password' => 'Contraseña:',
     'password_reset' => 'Reiniciar la contraseña',
 
@@ -58,7 +58,7 @@ return [
     'supplier' => 'Proveedor',
     'tag' => 'Etiqueta',
     'test_email' => 'Email de prueba de Snipe-IT',
-    'test_mail_text' => 'Esto es una prueba desde el sistema de gestión de activos de Snipe-IT. Si tienes esto, correo está funcionando :)',
+    'test_mail_text' => 'Esto es una prueba desde el sistema de gestión de activos de Snipe-IT. Si lees esto, es que el correo está funcionando :)',
     'the_following_item' => 'El siguiente artículo ha sido devuelto: ',
     'low_inventory_alert' => 'Hay :count elemento que está por debajo del inventario mínimo o que pronto estará debajo.|Hay :count elementos que están por debajo del inventario mínimo o que pronto serán bajos.',
     'assets_warrantee_alert' => 'There is :count asset with a warranty expiring in the next :threshold days.|There are :count assets with warranties expiring in the next :threshold days.',

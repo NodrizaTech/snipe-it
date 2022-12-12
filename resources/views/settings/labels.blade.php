@@ -188,7 +188,12 @@
                                         {{ Form::checkbox('labels_display_company_name', '1', old('labels_display_company_name',   $setting->labels_display_company_name),['class' => 'minimal', 'aria-label'=>'labels_display_company_name']) }}
                                         {{ trans('admin/companies/table.name') }}
 				    </label>
-
+					<label for="labels_display_company_name">
+                                        {{ Form::checkbox('labels_display_company_logo', '1', old('labels_display_company_logo'	,   $setting->labels_display_company_logo),['class' => 'minimal', 'aria-label'=>'labels_display_company_logo']) }}
+                                        {{ trans('admin/companies/table.logo') }}
+				    </label>
+				    
+				    
                                 </div> <!--/.CHECKBOX-->
                             </div> <!--/.col-md-9-->
                         </div> <!--/.form-group-->

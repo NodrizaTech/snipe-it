@@ -35,7 +35,7 @@ return [
     'Expiring_Licenses_Report' => 'Informe de licencias que expiran.',
     'hello' => 'Hola',
     'hi' => 'Hola',
-    'i_have_read' => 'Podrás aceptar o rechazar estos terminos cuando el departamento de Sistemas contacte contigo para realizar la entrega. En caso necesario, el equipo te pedirá realizar una firma con el fin de aceptar o rechazar el activo.',
+    'i_have_read' => 'Podrás aceptar o rechazar estos terminos cuando el departamento de Sistemas contacte contigo para realizar la entrega. En caso necesario, el equipo podrá solcitarte realizar una firma.',
     'item' => 'Articulo:',
     'Item_Request_Canceled' => 'Solicitud de cancelación de requerimiento',
     'Item_Requested' => 'Artículo solicitado',
